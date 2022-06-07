@@ -1,5 +1,6 @@
 package com.dailycode.employee.model;
 
+import com.dailycode.employee.entity.EmployeeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,4 +15,6 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
+
+
 }

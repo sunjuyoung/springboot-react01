@@ -1,5 +1,6 @@
 package com.dailycode.employee.entity;
 
+import com.dailycode.employee.model.Employee;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -17,4 +18,10 @@ public class EmployeeEntity {
     private String lastName;
     private String email;
 
+
+    public void updateEmployee(Employee em){
+        this.firstName = em.getFirstName();
+        this.lastName = em.getLastName();
+        this.email = em.getEmail();
+    }
 }
